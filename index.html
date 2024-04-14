@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Note</title>
+    <link rel="stylesheet" href="./Styleoutput.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-indigo-500 to-blue-500">
+    <section class="md:flex md:flex-col">
+      <div
+        class="bg-gradient-to-r from-slate-900 to-slate-700 w-[410px] m-[50px] rounded-[15px] flex"
+      >
+        <form action="">
+          <div class="flex gap-6 m-5 h-[50px]">
+            <input
+              id="text"
+              type="text"
+              placeholder="Note Title"
+              class="w-[300px] pl-4 rounded-[10px]"
+            />
+            <div class="pt-3">
+              <input type="color" id="color" value="#7bbfcc" />
+            </div>
+          </div>
+          <div class="m-5 font-mono text-[19px] text-black">
+            <textarea
+              name=""
+              type="text"
+              class="bg-[#ABBBCE] resize-none p-4 w-[375px] h-[200px] placeholder-black rounded-[10px] outline-none"
+              placeholder="Write Your Text here..."
+            ></textarea>
+          </div>
+          <button
+            id="button"
+            type="submit"
+            class="mx-5 mb-5 bg-white rounded-[10px] w-[100px] h-[40px] font-bold font-sans hover:bg-red-400 hover:text-white"
+          >
+            ADD
+          </button>
+        </form>
+      </div>
+
+      <div class="flex flex-col m-5" id="output-container">
+        <!-- JavaScript -->
+      </div>
+    </section>
+
+    <script src="./StickyNote.js"></script>
+  </body>
+</html>
